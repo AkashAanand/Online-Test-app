@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.akash.quiz.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_subCategoryRootFragment"
+            app:destination="@id/subCategoryRootFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.akash.quiz.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.akash.quiz.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/subCategoryRootFragment"
+        android:name="com.akash.quiz.frgm.SubCategoryRootFragment"
+        android:label="{label}"
+        tools:layout="@layout/fragment_sub_category_root">
+
+        <argument
+            android:name="category"
+            app:argType="com.akash.quiz.cls.CategoryData" />
+        <argument
+            android:name="label"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_subCategoryRootFragment_to_questionRootFragment"
+            app:destination="@id/questionRootFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.akash.quiz.frgm.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/questionRootFragment"
+        android:name="com.akash.quiz.frgm.QuestionRootFragment"
+        android:label="{label}"
+        tools:layout="@layout/fragment_question_root" >
+        <argument
+            android:name="quizData"
+            app:argType="com.akash.quiz.cls.QuizData" />
+        <argument
+            android:name="label"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_questionRootFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/questionRootFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <dialog
+        android:id="@+id/summeryFragment"
+        android:name="com.akash.quiz.frgm.SummeryFragment"
+        android:label="fragment_summery"
+        tools:layout="@layout/fragment_summery" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.akash.quiz.frgm.ResultFragment"
+        android:label="ResultFragment" >
+        <argument
+            android:name="resultData"
+            app:argType="com.akash.quiz.cls.ResultData" />
+        <action
+            android:id="@+id/action_resultFragment_to_solutionFragment"
+            app:destination="@id/solutionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/solutionFragment"
+        android:name="com.akash.quiz.frgm.SolutionFragment"
+        android:label="SolutionFragment" >
+        <argument
+            android:name="resultId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

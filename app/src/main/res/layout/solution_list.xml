@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twenty_dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="@dimen/twenty_dp"
+            android:text="Otpion 1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="@dimen/twenty_dp"
+            android:text="Otpion 3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="@dimen/twenty_dp"
+            android:text="Otpion 3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="@dimen/twenty_dp"
+            android:text="Otpion 4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen_sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1089528540307",
+    "project_id": "akashquiz-81534",
+    "storage_bucket": "akashquiz-81534.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089528540307:android:1ce95f569d770ca401f166",
+        "android_client_info": {
+          "package_name": "com.akash.quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089528540307-9vvqj127cmu7n2u1jtnr8qe91q0mogd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALMo7C1qZWR_D8Yj45wYwGwgC7kBcnhRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089528540307-9vvqj127cmu7n2u1jtnr8qe91q0mogd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089528540307:android:5509bf125e26247101f166",
+        "android_client_info": {
+          "package_name": "com.arkapps.onlinetestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089528540307-9vvqj127cmu7n2u1jtnr8qe91q0mogd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALMo7C1qZWR_D8Yj45wYwGwgC7kBcnhRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089528540307-9vvqj127cmu7n2u1jtnr8qe91q0mogd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
